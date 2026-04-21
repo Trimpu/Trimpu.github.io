@@ -93,6 +93,10 @@
       color: var(--text);
     }
 
+    a {
+      color: var(--brand-2);
+    }
+
     .hero {
       padding: 88px 0 56px;
       display: grid;
@@ -220,7 +224,8 @@
     }
 
     .about,
-    .skills {
+    .skills,
+    .education {
       grid-column: span 6;
     }
 
@@ -267,6 +272,23 @@
       font-size: 0.95rem;
     }
 
+    .project-card ul {
+      margin: 12px 0 0;
+      padding-left: 18px;
+      color: var(--muted);
+      font-size: 0.93rem;
+    }
+
+    .project-card li {
+      margin-bottom: 6px;
+    }
+
+    .project-links {
+      margin-top: 12px;
+      font-size: 0.9rem;
+      font-weight: 700;
+    }
+
     .project-card .tag {
       margin-top: 14px;
       display: inline-block;
@@ -285,13 +307,27 @@
       font-size: 0.92rem;
     }
 
+    .contact-links {
+      margin: 14px 0 0;
+      padding: 0;
+      list-style: none;
+      display: grid;
+      gap: 10px;
+    }
+
+    .contact-links a {
+      text-decoration: none;
+      font-weight: 700;
+    }
+
     @media (max-width: 950px) {
       .hero {
         grid-template-columns: 1fr;
       }
 
       .about,
-      .skills {
+      .skills,
+      .education {
         grid-column: span 12;
       }
     }
@@ -324,6 +360,8 @@
       <nav aria-label="Main navigation">
         <ul>
           <li><a href="#about">About</a></li>
+          <li><a href="#education">Education</a></li>
+          <li><a href="#skills">Skills</a></li>
           <li><a href="#projects">Projects</a></li>
           <li><a href="#contact">Contact</a></li>
         </ul>
@@ -335,13 +373,14 @@
     <section class="hero">
       <article class="hero-main">
         <p class="eyebrow">AI/ML Engineer • Student Builder</p>
-        <h1>Hi, I'm Anuj.<br />I build intelligent products as <strong>Trimpu</strong>.</h1>
+        <h1>Hi, I'm Saianuj Sambarapu.<br />I build intelligent products as <strong>Trimpu</strong>.</h1>
         <p>
-          Computer Science student focused on AI and machine learning. I love building useful tools,
-          turning ideas into products, and experimenting with practical, real-world ML systems.
+          Computer Science Engineering student specializing in Artificial Intelligence and Machine Learning,
+          focused on building data-driven AI solutions and practical automation systems.
         </p>
         <div class="cta-row">
           <a class="btn btn-primary" href="#projects">View Projects</a>
+          <a class="btn btn-ghost" href="mailto:ssaianuj2004@gmail.com">Email Me</a>
           <a class="btn btn-ghost" href="https://github.com/Trimpu" target="_blank" rel="noopener noreferrer">GitHub</a>
         </div>
       </article>
@@ -371,12 +410,12 @@
             My current work centers on creating interactive tools that make complex concepts easier to understand.
           </p>
         </article>
-        <article class="card skills">
-          <h2 class="section-title">Focus Areas</h2>
+            <p class="stat-value">3 flagship</p>
+            <p class="stat-label">Hands-on real-world projects</p>
           <div class="chips" aria-label="Skills list">
             <span class="chip">Machine Learning</span>
-            <span class="chip">Artificial Intelligence</span>
-            <span class="chip">Data Visualization</span>
+            <p class="stat-value">B.Tech AI&ML</p>
+            <p class="stat-label">Nalla Malla Reddy Engineering College</p>
             <span class="chip">Python</span>
             <span class="chip">Model Prototyping</span>
             <span class="chip">Frontend Basics</span>
@@ -384,35 +423,105 @@
         </article>
       </div>
     </section>
-
+            <h2 class="section-title">Profile</h2>
     <section id="projects">
-      <h2 class="section-title">Projects</h2>
-      <div class="projects">
+              Computer Science Engineering student specializing in Artificial Intelligence and Machine Learning,
+              with a strong interest in building data-driven AI solutions. Actively exploring machine learning,
+              deep learning, and real-world system design through hands-on projects focused on automation,
+              data processing, and applied AI.
         <article class="card project-card">
           <h3>MathVizAI</h3>
-          <p>An AI-based math visualization system designed to make mathematical ideas intuitive and interactive.</p>
-          <span class="tag">Featured Project</span>
+          <article class="card education" id="education">
+            <h2 class="section-title">Education</h2>
+            <p>
+              <strong>Nalla Malla Reddy Engineering College</strong>, Hyderabad, India<br />
+              Bachelor of Technology in Artificial Intelligence &amp; Machine Learning<br />
+              Nov 2023 – Present
+            </p>
+          </article>
+        </div>
+      </section>
+
+      <section id="skills">
+        <article class="card skills">
+          <h2 class="section-title">Skills</h2>
+          <div class="chips" aria-label="Skills list">
+            <span class="chip">Python</span>
+            <span class="chip">SQL</span>
+            <span class="chip">C</span>
+            <span class="chip">Machine Learning Fundamentals</span>
+            <span class="chip">Model Implementation</span>
+            <span class="chip">Model Evaluation</span>
+            <span class="chip">NLP Basics</span>
+            <span class="chip">NumPy</span>
+            <span class="chip">Pandas</span>
+            <span class="chip">Matplotlib</span>
+            <span class="chip">Requests</span>
+            <span class="chip">Manim</span>
+            <span class="chip">Git</span>
+            <span class="chip">GitHub</span>
+            <span class="chip">VS Code</span>
+            <span class="chip">Linux CLI</span>
+            <span class="chip">Virtual Environments</span>
+            <span class="chip">MLOps</span>
+            <span class="chip">Data Visualization</span>
+            <span class="chip">Real-World AI Solutions</span>
+          </div>
         </article>
-      </div>
-    </section>
+      </section>
 
-    <section id="contact">
-      <article class="card">
-        <h2 class="section-title">Contact</h2>
-        <p>
-          Want to collaborate or connect? Reach out on
-          <a href="https://github.com/Trimpu" target="_blank" rel="noopener noreferrer" style="color: var(--brand-2); font-weight: 700; text-decoration: none;">GitHub @Trimpu</a>.
-        </p>
-      </article>
-    </section>
-  </main>
+      <section id="projects">
+        <h2 class="section-title">Projects</h2>
+        <div class="projects">
+          <article class="card project-card">
+            <h3>MathVizAI — AI-powered mathematical visualization</h3>
+            <ul>
+              <li>Converted mathematical text into Manim-based visual animations.</li>
+              <li>Implemented text parsing and automated scene generation.</li>
+              <li>Built a rendering pipeline to create educational math videos.</li>
+              <li>Focused on better conceptual understanding through visuals.</li>
+            </ul>
+            <p class="project-links"><a href="https://github.com/Trimpu/MathVizAI" target="_blank" rel="noopener noreferrer">GitHub Repo</a></p>
+            <span class="tag">Featured Project</span>
+          </article>
 
-  <footer>
-    © <span id="year"></span> Trimpu.me • Built with focus and curiosity.
-  </footer>
+          <article class="card project-card">
+            <h3>PDF2LaTeX Automation Tool</h3>
+            <ul>
+              <li>Built automation to convert PDF documents into structured LaTeX files.</li>
+              <li>Implemented equation detection and formatting cleanup.</li>
+              <li>Extracted text and structure for clean LaTeX reconstruction.</li>
+              <li>Reduced manual LaTeX rewriting effort and improved readability.</li>
+            </ul>
+            <p class="project-links"><a href="https://github.com/Trimpu/PDF2LATEX" target="_blank" rel="noopener noreferrer">GitHub Repo</a></p>
+            <span class="tag">Automation</span>
+          </article>
 
-  <script>
-    document.getElementById("year").textContent = new Date().getFullYear();
+          <article class="card project-card">
+            <h3>Speech Translation and Transcription System</h3>
+            <ul>
+              <li>Built an end-to-end speech transcription and translation pipeline using Python and Whisper.</li>
+              <li>Designed REST APIs for audio input and translated output text.</li>
+              <li>Implemented real-time transcription with multilingual support.</li>
+              <li>Optimized model loading to reduce response latency.</li>
+            </ul>
+            <span class="tag">Backend • Frontend</span>
+          </article>
+        </div>
+      </section>
+
+      <section id="contact">
+        <article class="card">
+          <h2 class="section-title">Contact</h2>
+          <p>Open to collaboration, internships, and AI product opportunities.</p>
+          <ul class="contact-links">
+            <li>Email: <a href="mailto:ssaianuj2004@gmail.com">ssaianuj2004@gmail.com</a></li>
+            <li>Mobile: <a href="tel:+917416222181">+91 7416222181</a></li>
+            <li>LinkedIn: <a href="https://linkedin.com/in/saianuj-sambarapu-898234276" target="_blank" rel="noopener noreferrer">saianuj-sambarapu-898234276</a></li>
+            <li>GitHub: <a href="https://github.com/Trimpu" target="_blank" rel="noopener noreferrer">@Trimpu</a></li>
+          </ul>
+        </article>
+      </section>
   </script>
 </body>
 </html>
